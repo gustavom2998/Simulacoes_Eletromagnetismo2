@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-(2) Construa em  Python uma função que transforme um número complexo na forma retangular para polar. O angulo é retornado em graus.
+(2) Construa em  Python uma função que transforme um número complexo na forma 
+retangular para polar. O angulo é retornado em graus.
 """
 # Importacao de bibliotecas
 import numpy as np

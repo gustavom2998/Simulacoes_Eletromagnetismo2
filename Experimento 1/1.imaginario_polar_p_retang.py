@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-(1) Construa em  Python uma função que transforme um número complexo da forma polar para retangular. O angulo é dado em graus.
+(1) Construa em  Python uma função que transforme um número complexo da forma 
+polar para retangular. O angulo é dado em graus.
 """
 # Importacao de bibliotecas
 import numpy as np
+from numpy import pi
 
 # Funcao de entrada de dados do usuario
 def entrada_usuario():
@@ -18,7 +20,8 @@ def entrada_usuario():
 def converte_retangular(mag,angulo):
     
     # Z = |Z|e^(iθ) - O numpy realiza um casting para forma retangular
-    valor_complexo = mag * np.exp(1j * angulo)
+    # Necessario transformar o angulos em radianos
+    valor_complexo = mag * np.exp(1j * (pi*angulo/180))
     
     return valor_complexo
 
